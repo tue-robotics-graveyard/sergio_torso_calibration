@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(quaternion_to_euler)
+project(sergio_torso_calibration)
 
 find_package(catkin REQUIRED COMPONENTS
 	rospy

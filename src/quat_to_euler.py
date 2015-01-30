@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # Start up ROS pieces.
-PKG = 'my_pkg'
+PKG = 'sergio_torso_calibration'
 import roslib; roslib.load_manifest(PKG)
 import rospy
 import tf
@@ -10,7 +10,7 @@ import tf
 # ROS messages.
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import Imu
-from quaternion_to_euler.msg import Eulers
+from sergio_torso_calibration.msg import Eulers
 
 class QuatToEuler():
     def __init__(self):

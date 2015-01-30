@@ -1,15 +1,20 @@
 <?xml version="1.0"?>
 <package>
-  <name>quaternion_to_euler</name>
-  <version>0.0.0</version>
-  <description>No description available</description>
+  <name>sergio_torso_calibration</name>
+  <version>1.0.0</version>
+  <description>Sergio torso calibration package</description>
 
-  <maintainer email="todo@tue.nl">todo</maintainer>
+  <maintainer email="t.m.c.peters@student.tue.nl">Ton Peters</maintainer>
 
-  <license>TODO</license>
+  <license>BSD</license>
 
   <build_depend>message_generation</build_depend>
+  <build_depend>xsens_driver</build_depend>
+  
   <run_depend>message_runtime</run_depend>
+  <run_depend>xsens_driver</run_depend>
+  
+  
   <buildtool_depend>catkin</buildtool_depend>
 
 </package>

@@ -10,7 +10,7 @@
         <param name="frame_id" value="imu"/>
     </node>
 	
-	<node pkg="quaternion_to_euler" type="quat_to_euler.py" name="imu_euler_angles">
+	<node pkg="sergio_torso_calibration" type="quat_to_euler.py" name="imu_euler_angles">
 		<remap from="imu"   to="imu/data"/>
 		<remap from="euler" to="imu/euler"/>
 	</node>
