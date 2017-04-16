@@ -4,7 +4,7 @@
 * Xsens IMU (Orange)
 * This package (tue-get get install ros-sergio_torso_calibration)
 * PC for Hardware, IMU driver and TF
-* PC wit MATLAB
+* PC with MATLAB
 
 ## Calibration
 1. Run hardware
