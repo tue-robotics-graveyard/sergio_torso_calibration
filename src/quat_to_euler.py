@@ -20,7 +20,7 @@ class QuatToEuler():
         # Create subscribers and publishers.
         sub_imu   = rospy.Subscriber("imu", Imu, self.imu_callback)
         sub_odom  = rospy.Subscriber("odom", Odometry, self.odom_callback)
-        pub_euler = rospy.Publisher("euler", Eulers)
+        pub_euler = rospy.Publisher("euler", Eulers, queue_size=20)
 
         # Main while loop.
         while not rospy.is_shutdown():
