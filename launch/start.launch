@@ -8,6 +8,8 @@
     <!-- Launch -->
     <node pkg="xsens_driver" type="mtnode.py" name="imu_node">
         <param name="frame_id" value="imu"/>
+	<param name="device" value="/dev/ttyUSB0"/>
+	<param name="baudrate" value="115200"/>
     </node>
 	
 	<node pkg="sergio_torso_calibration" type="quat_to_euler.py" name="imu_euler_angles">
