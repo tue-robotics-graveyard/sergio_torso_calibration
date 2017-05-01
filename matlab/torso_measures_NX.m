@@ -40,7 +40,7 @@ H=[0		-74.8-ycenter	474.4-z_base_plate].'.*1e-3;
 I=[0		-61.4-ycenter	496.1-z_base_plate].'.*1e-3;
 J=[0		213.5-ycenter	766.6-z_base_plate].'.*1e-3;
 K=[0		185.6-ycenter	840.5-z_base_plate].'.*1e-3;
-L=[0		89.8-ycenter	1220.0-z_base_plate].'.*1e-3; % center of the soulder rotation
+L=[0		89.8-ycenter	1220.0-z_base_plate].'.*1e-3; % center of the shoulder rotation
 L2 = [0		95.0-ycenter	1200.8-z_base_plate].'.*1e-3; % center of the shoulder hole
 
 % laser tilt points
