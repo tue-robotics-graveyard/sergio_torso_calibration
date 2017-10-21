@@ -10,6 +10,6 @@ function out = an(A,B,C)
 
 end
 
-function v=normalize(v)
-    v=v/norm(v);
+function vout=normalize(vin)
+    vout=vin/norm(vin);
 end
