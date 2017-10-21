@@ -3,7 +3,7 @@ clear all; close all; clc;
 run torso_measures_NX
 
 % vector containing constants
-CC = zeros(14,1);
+CC = zeros(23,1);
 
 % vector with origin in A and pointing in negative y dircetion
 AZ = A+[0;-1;0];
@@ -81,7 +81,7 @@ CC(23) = GJH+KJL; % angle 2 min
 
 %% print results to copy paste
 print_format = 'C%.i = %8.6f;';
-disp(' Constants used in ConversionSpindleAngle.*:');
+fprintf(' Constants used in ConversionSpindleAngle.*:\n');
 const = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,20,21,22,23];
 for i=const
     string = sprintf(print_format,i,CC(i));
@@ -89,7 +89,7 @@ for i=const
 end
 
 
-disp(sprintf('\n Constants used in InitCalipherToSpindle.*:'));
+fprintf('\n Constants used in InitCalipherToSpindle.*:\n');
 const = [1,2,3,4,5,6,9,15,16,17,18,19];
 for i=const
     string = sprintf(print_format,i,CC(i));
